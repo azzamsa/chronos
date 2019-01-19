@@ -364,7 +364,7 @@ For example, in my init file I have:
                                             "--af=scaletempo=speed=pitch"
                                             "--speed=0.65"
                                             "~/wip/progs/cdt/temple-bell-zen.mp3")
-          chronos-text-to-speech-program "espeak"
+          chronos-text-to-speech-program "espeak-ng"
           chronos-text-to-speech-program-parameters "-s 100"
           chronos-expiry-functions '(chronos-dunstify
                                      chronos-buffer-notify
