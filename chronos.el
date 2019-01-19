@@ -557,7 +557,7 @@ buffer."
 (defun chronos-dunstify (c)
   "Notify expiration of timer C using dunstify."
   (chronos--shell-command "Chronos dunstify notification"
-                          "dunstify"
+                          "notify-send"
                           (list "-u" (symbol-name chronos-desktop-notifications-urgency)
                                 (chronos--time-string c)
                                 (chronos--message c))))
